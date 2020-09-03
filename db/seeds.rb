@@ -1,0 +1,16 @@
+teacher1 = Teacher.create(last_name: "TLN1", years_of_experience: 7)
+teacher2 = Teacher.create(last_name: "TLN2", years_of_experience: 3)
+teacher3 = Teacher.create(last_name: "TLN3", years_of_experience: 10)
+teacher4 = Teacher.create(last_name: "TLN4", years_of_experience: 5)
+
+student1 = Student.create(first_name: "FN1", last_name: "LN1")
+student2 = Student.create(first_name: "FN2", last_name: "LN2")
+student3 = Student.create(first_name: "FN3", last_name: "LN3")
+student4 = Student.create(first_name: "FN4", last_name: "LN4")
+
+grade_level1 = GradeLevel.create(grade_level: "sixth", teacher: teacher1, student: student1)
+grade_level2 = GradeLevel.create(grade_level: "fifth", teacher: teacher1, student: student2)
+grade_level3 = GradeLevel.create(grade_level: "sixth", teacher: teacher2, student: student3)
+grade_level4 = GradeLevel.create(grade_level: "third", teacher: teacher3, student: student1)
+grade_level5 = GradeLevel.create(grade_level: "second", teacher: teacher4, student: student4)
+grade_level6 = GradeLevel.create(grade_level: "third", teacher: teacher1, student: student1)
